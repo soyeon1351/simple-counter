@@ -6,18 +6,13 @@ import { useState } from 'react'
 function App() {
 
   const [count, setCount] = useState(0)
-  const handleSetCount = (value) => {
-    setCount(count + value)
-  }
 
   return(
     <div className='App'>
       <h1>SIMPLE COUNTER</h1>
       <section>
         <Viewer count={count} /> 
-      </section>
-      <section>
-        <Controller handleSetcount={handleSetCount} /> 
+        <Controller count={count} setCount={setCount} /> 
       </section>
     </div>
   )

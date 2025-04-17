@@ -1,12 +1,12 @@
-const Controller = ({handleSetcount}) => {
+const Controller = ({count, setCount}) => {
     return (
-        <div>
-            <button onClick={()=>{handleSetcount(-1)}}>-1</button>
-            <button onClick={()=>{handleSetcount(-10)}}>-10</button>
-            <button onClick={()=>{handleSetcount(-100)}}>-100</button>
-            <button onClick={()=>{handleSetcount(+100)}}>+100</button>
-            <button onClick={()=>{handleSetcount(+10)}}>+10</button>
-            <button onClick={()=>{handleSetcount(+1)}}>+1</button>
+        <div className="buttons">
+            <button onClick={() => setCount(count - 1)}>-1</button>
+            <button onClick={() => setCount(count - 10)}>-10</button>
+            <button onClick={() => setCount(count - 100)}>-100</button>
+            <button onClick={() => setCount(count + 100)}>+100</button>
+            <button onClick={() => setCount(count + 10)}>+10</button>
+            <button onClick={() => setCount(count + 1)}>+1</button>
         </div>
     )
 }

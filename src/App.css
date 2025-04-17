@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 50px;
+    padding: 30px
+}
+
+p {
+    padding: 10px;
+    border: 3px solid aliceblue;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
 .App {
   display: flex;            /* Flexbox 활성화 */
   flex-direction: column;   /* 세로 정렬 */
@@ -11,4 +23,36 @@
   align-items: center;      /* 세로(수직) 방향 가운데 정렬 */
   height: 100vh;            /* 화면의 전체 높이 사용 */
   text-align: center;       /* 텍스트 가운데 정렬 (선택 사항) */
+  gap: 15px;
+}
+
+.App > section {
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(141, 160, 207);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.buttons > button:hover {
+    background-color: rgb(160, 188, 212);
+}
+
+.buttons > button:active {
+    background-color: rgb(137, 174, 207); 
 }
