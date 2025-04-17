@@ -1,17 +1,23 @@
-import React from 'react'
 import './App.css'
 import Viewer from "./component/Viewer"
 import Controller from './component/Controller'
+import { useState } from 'react'
 
 function App() {
+
+  const [count, setCount] = useState(0)
+  const handleSetCount = (value) => {
+    setCount(count + value)
+  }
+
   return(
     <div className='App'>
       <h1>SIMPLE COUNTER</h1>
       <section>
-        <Viewer /> 
+        <Viewer count={count} /> 
       </section>
       <section>
-        <Controller /> 
+        <Controller handleSetcount={handleSetCount} /> 
       </section>
     </div>
   )
