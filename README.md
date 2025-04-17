@@ -15,7 +15,7 @@
 - `App` 컴포넌트에서 상태(`count`) 관리
 
 ## 📸 화면 예시
-
+![카운터 데모](https://github.com/soyeon1351/simple-counter/blob/main/counter-demo.gif)
 
 ## 🚀 실행 방법
 ```bash
