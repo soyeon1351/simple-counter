@@ -6,6 +6,7 @@
 
 .App {
   display: flex;            /* Flexbox 활성화 */
+  flex-direction: column;   /* 세로 정렬 */
   justify-content: center;  /* 가로(수평) 방향 가운데 정렬 */
   align-items: center;      /* 세로(수직) 방향 가운데 정렬 */
   height: 100vh;            /* 화면의 전체 높이 사용 */
