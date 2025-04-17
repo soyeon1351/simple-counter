@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.App {
+  display: flex;            /* Flexbox 활성화 */
+  justify-content: center;  /* 가로(수평) 방향 가운데 정렬 */
+  align-items: center;      /* 세로(수직) 방향 가운데 정렬 */
+  height: 100vh;            /* 화면의 전체 높이 사용 */
+  text-align: center;       /* 텍스트 가운데 정렬 (선택 사항) */
+}
